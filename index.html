@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A vitrine da Tati: perfumes, bolsas, tênis e roupas escolhidos com carinho." />
+    <meta name="theme-color" content="#f4b728" />
+    <title>Tati | Perfumes, moda & mais</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23F4B728'/%3E%3Cpath d='M18 19h28v8H36v23h-8V27H18z' fill='%232A2527'/%3E%3Ccircle cx='48' cy='16' r='6' fill='%23DE7890'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header" id="topo">
+      <div class="container nav-wrap">
+        <a class="brand" href="#topo" aria-label="Tati, início">
+          <img class="brand-logo" src="./assets/tati-ribeiro-logo-restaurado.png" alt="" fetchpriority="high" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Abrir menu</span>
+          <span></span><span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+          <a href="#categorias">Categorias</a>
+          <a href="#queridinhos">Queridinhos</a>
+          <a href="#sobre">Sobre a Tati</a>
+          <a href="#loja">A loja</a>
+          <a class="nav-cta whatsapp-link" href="#contato">Falar com a Tati</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Escolhas com personalidade</p>
+            <h1>Se eu gostei,<br /><em>já quero te mostrar.</em></h1>
+            <p class="hero-text">Perfumes, bolsas, tênis e roupas que a Tati escolhe e já quer mostrar pra todo mundo.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#queridinhos">Ver os queridinhos <span aria-hidden="true">↓</span></a>
+              <a class="button button-secondary whatsapp-link" href="#contato">Falar com a Tati</a>
+            </div>
+            <div class="hero-note" aria-label="Atendimento próximo e pessoal">
+              <span class="mini-avatars" aria-hidden="true"><i>T</i><i>♡</i></span>
+              <p><strong>Escolha sem dúvida.</strong><br />A Tati te ajuda de verdade.</p>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" style="--delay: .12s">
+            <div class="sun-sticker" aria-hidden="true">oi!</div>
+            <div class="photo-frame photo-frame--hero">
+              <img src="./tati.png" alt="Tati sorrindo e apresentando um perfume em sua loja" fetchpriority="high" />
+              <span class="photo-caption">Tati e seus queridinhos ✦</span>
+            </div>
+            <div class="hand-note">tem a cara<br />da Tati <span>↗</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Categorias em destaque">
+        <div class="marquee-track" aria-hidden="true">
+          <div class="marquee-group">
+            <span>Perfumes Árabes</span><i>✦</i><span>Bolsas</span><i>✦</i><span>Tênis</span><i>✦</i><span>Roupas</span><i>✦</i>
+            <span>Perfumes Árabes</span><i>✦</i><span>Bolsas</span><i>✦</i><span>Tênis</span><i>✦</i><span>Roupas</span><i>✦</i>
+          </div>
+          <div class="marquee-group">
+            <span>Perfumes Árabes</span><i>✦</i><span>Bolsas</span><i>✦</i><span>Tênis</span><i>✦</i><span>Roupas</span><i>✦</i>
+            <span>Perfumes Árabes</span><i>✦</i><span>Bolsas</span><i>✦</i><span>Tênis</span><i>✦</i><span>Roupas</span><i>✦</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="section categories" id="categorias">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> Escolha seu mood</p>
+              <h2>O que você está<br />procurando hoje?</h2>
+            </div>
+            <p>Um cantinho para descobrir coisas boas — sem pressa e sem complicação.</p>
+          </div>
+          <div class="category-grid" id="category-grid"></div>
+        </div>
+      </section>
+
+      <section class="section arabic-perfumes" id="arabes">
+        <div class="container">
+          <div class="arabic-intro reveal">
+            <p class="eyebrow eyebrow-light"><span></span> Seleção especial</p>
+            <h2>Um cheirinho<br />do Oriente <b>✦</b></h2>
+            <p>Perfumes árabes marcantes, elegantes e cheios de personalidade. A Tati separa os queridinhos para você descobrir aquele que combina com você.</p>
+          </div>
+          <div class="featured-grid" id="featured-grid"></div>
+        </div>
+      </section>
+
+      <section class="section favorites" id="queridinhos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow"><span></span> Vitrine da vez</p>
+              <h2>Os queridinhos<br />da Tati</h2>
+            </div>
+            <p>Uma mistura das peças e fragrâncias que estão fazendo sucesso por aqui.</p>
+          </div>
+          <div class="product-grid" id="product-grid"></div>
+        </div>
+      </section>
+
+      <section class="section tati-picks">
+        <div class="container picks-shell">
+          <div class="picks-title reveal">
+            <p class="eyebrow"><span></span> Falou, tá falado</p>
+            <h2>Tati indica <b>✦</b></h2>
+            <p>Três escolhas que ganharam o coração dela — e o motivo contado do jeitinho da Tati.</p>
+          </div>
+          <div class="picks-list" id="picks-list"></div>
+        </div>
+      </section>
+
+      <section class="section about" id="sobre">
+        <div class="container about-grid">
+          <div class="about-visual reveal">
+            <div class="photo-frame photo-frame--about">
+              <img src="./tati.png" alt="Tati em sua loja de perfumes" loading="lazy" />
+              <span class="photo-caption">Oi, eu sou a Tati 👋</span>
+            </div>
+          </div>
+          <div class="about-copy reveal" style="--delay: .1s">
+            <p class="eyebrow"><span></span> Por trás das escolhas</p>
+            <h2>Prazer, eu sou<br />a Tati <b>♥</b></h2>
+            <p>Eu adoro encontrar coisa boa e indicar para quem está comigo. Por aqui você encontra alguns dos meus perfumes, bolsas, tênis e roupas favoritos.</p>
+            <p>E se ficar na dúvida, pode me chamar. Eu adoro ajudar a escolher.</p>
+            <a class="text-link whatsapp-link" href="#contato">Vem conversar comigo <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials" aria-labelledby="avaliacoes-title">
+        <div class="container">
+          <div class="testimonials-heading reveal">
+            <p class="eyebrow"><span></span> Carinho de quem compra</p>
+            <h2 id="avaliacoes-title">Já saiu daqui feliz <span>☺</span></h2>
+            <p class="demo-label">Conteúdo demonstrativo — substituir por avaliações reais.</p>
+          </div>
+          <div class="testimonial-grid" id="testimonial-grid"></div>
+        </div>
+      </section>
+
+      <section class="section store-location" id="loja" aria-labelledby="loja-title">
+        <div class="container location-shell">
+          <div class="location-copy reveal">
+            <p class="eyebrow"><span></span> Vem conhecer de perto</p>
+            <h2 id="loja-title">A loja da Tati <b>♥</b></h2>
+            <p>Quer conhecer os produtos de perto? Salve o endereço e venha visitar a loja da Tati.</p>
+            <div class="location-address">
+              <span aria-hidden="true">⌖</span>
+              <div><small>Endereço da loja</small><strong>Travessa Tempestade, 22<br />Parque Edu Chaves</strong></div>
+            </div>
+            <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Travessa%20Tempestade%2C%2022%2C%20Parque%20Edu%20Chaves" target="_blank" rel="noopener noreferrer">Abrir rota no mapa <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="map-card reveal" style="--delay: .1s">
+            <div class="map-tiles" role="img" aria-label="Mapa real da região da Travessa Tempestade, no Parque Edu Chaves">
+              <img src="./assets/map/17-48578-74331.png" alt="" /><img src="./assets/map/17-48579-74331.png" alt="" /><img src="./assets/map/17-48580-74331.png" alt="" /><img src="./assets/map/17-48581-74331.png" alt="" />
+              <img src="./assets/map/17-48578-74332.png" alt="" /><img src="./assets/map/17-48579-74332.png" alt="" /><img src="./assets/map/17-48580-74332.png" alt="" /><img src="./assets/map/17-48581-74332.png" alt="" />
+              <img src="./assets/map/17-48578-74333.png" alt="" /><img src="./assets/map/17-48579-74333.png" alt="" /><img src="./assets/map/17-48580-74333.png" alt="" /><img src="./assets/map/17-48581-74333.png" alt="" />
+            </div>
+            <span class="map-marker" aria-hidden="true"><i></i></span>
+            <a class="map-attribution" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap</a>
+            <a class="map-card-label" href="https://www.google.com/maps/search/?api=1&amp;query=Travessa%20Tempestade%2C%2022%2C%20Parque%20Edu%20Chaves%2C%20S%C3%A3o%20Paulo%2C%20SP%2C%2002228-080" target="_blank" rel="noopener noreferrer" aria-label="Abrir a localização da loja da Tati no Google Maps">
+              <span aria-hidden="true">⌖</span><strong>Travessa Tempestade, 22</strong><small>Parque Edu Chaves · São Paulo — SP</small>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section instagram" aria-labelledby="instagram-title">
+        <div class="container">
+          <div class="instagram-header reveal">
+            <div>
+              <p class="eyebrow"><span></span> Novidades primeiro por lá</p>
+              <h2 id="instagram-title">Segue a Tati <span>@tatyportaty</span></h2>
+              <p class="gallery-note">Uma amostra real do universo da Tati: perfumes, moda e calçados.</p>
+            </div>
+            <a class="button button-dark instagram-link" href="#instagram-grid">Me acompanha no Instagram <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="instagram-grid" id="instagram-grid">
+            <a class="social-card instagram-link reveal" href="#instagram-grid" aria-label="Ver perfumes da Tati no Instagram">
+              <img src="./assets/perfume-rose-studio.png" alt="Perfume rosé da vitrine da Tati em fotografia de estúdio" loading="lazy" decoding="async" />
+              <span>Perfumes</span>
+            </a>
+            <a class="social-card instagram-link reveal" style="--delay: .06s" href="#instagram-grid" aria-label="Ver calçados da Tati no Instagram">
+              <img src="./assets/tenis-vinho-studio.png" alt="Tênis branco e vinho em fotografia de estúdio" loading="lazy" decoding="async" />
+              <span>Calçados</span>
+            </a>
+            <a class="social-card instagram-link reveal" style="--delay: .12s" href="#instagram-grid" aria-label="Ver roupas da Tati no Instagram">
+              <img src="./assets/moda-look-studio.png" alt="Blusa rosa e calça branca em fotografia de estúdio" loading="lazy" decoding="async" />
+              <span>Moda</span>
+            </a>
+            <a class="social-card instagram-link reveal" style="--delay: .18s" href="#instagram-grid" aria-label="Ver perfumes masculinos da Tati no Instagram">
+              <img src="./assets/perfume-masculino-studio.png" alt="Perfume masculino da vitrine da Tati em fotografia de estúdio" loading="lazy" decoding="async" />
+              <span>Perfumes masculinos</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="contato">
+        <div class="container cta-shell reveal">
+          <p class="eyebrow"><span></span> Pode chamar</p>
+          <h2>Não sabe qual escolher?<br /><em>Me chama. Eu te ajudo</em> <b>♥</b></h2>
+          <a class="button button-dark button-large whatsapp-link" href="#contato">Conversar com a Tati <span aria-hidden="true">↗</span></a>
+          <span class="cta-scribble" aria-hidden="true">sem cerimônia :)</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="brand brand-footer" href="#topo" aria-label="Tati Ribeiro, voltar ao topo"><img class="brand-logo" src="./assets/tati-ribeiro-logo-restaurado.png" alt="" loading="lazy" /></a>
+          <p>Perfumes, bolsas, tênis<br />e roupas escolhidas.</p>
+        </div>
+        <div class="footer-links">
+          <p>Vamos conversar</p>
+          <a class="instagram-link" href="#instagram-grid">Instagram <span>↗</span></a>
+          <a class="whatsapp-link" href="#contato">WhatsApp <span>↗</span></a>
+          <a id="contact-email" href="mailto:contato@exemplo.com">Contato</a>
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="current-year"></span> Tati.</span>
+          <a class="ravar-credit" href="https://somosravar.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Desenvolvido por RAVAR">
+            <span>Desenvolvido por</span>
+            <span class="ravar-logo-window" aria-hidden="true"><img src="./assets/ravar-logo-white.svg" alt="" /></span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <a class="floating-whatsapp whatsapp-link" href="#contato" aria-label="Conversar com a Tati pelo WhatsApp">
+      <span aria-hidden="true">♡</span>
+      <small>Chama a Tati</small>
+    </a>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
