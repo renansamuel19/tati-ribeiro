@@ -3,7 +3,7 @@ const SITE_CONFIG = {
   instagramUrl: "https://instagram.com/tatyportaty",
   instagramHandle: "@tatyportaty",
   contactEmail: "", // Adicione o e-mail real quando estiver confirmado.
-  whatsappIntro: "Oi, Tati! Vim pelo seu site e queria saber mais.",
+  whatsappIntro: "Oi, Taty! Vim pelo seu site e queria saber mais.",
 };
 
 const categories = [
@@ -23,7 +23,7 @@ const products = [
   { category: "Perfume", name: "Perfume feminino", description: "Delicado, elegante e cheio de presença.", price: "Sob consulta", imageLabel: "Foto do perfume aqui", color: "#f5dbe1", image: "./assets/perfume-rose-studio.png", alt: "Perfume feminino rosé em fotografia de estúdio", position: "center" },
   { category: "Bolsa", name: "Bolsa 01", description: "Prática para acompanhar todos os dias.", price: "Sob consulta", imageLabel: "Foto da bolsa aqui", color: "#ffe8a8" },
   { category: "Tênis", name: "Tênis casual", description: "Conforto e estilo na mesma escolha.", price: "Sob consulta", imageLabel: "Foto do tênis aqui", color: "#e8dde6", image: "./assets/tenis-vinho-studio.png", alt: "Par de tênis branco e vinho em fotografia de estúdio", position: "center" },
-  { category: "Roupa", name: "Blusa feminina", description: "Uma peça versátil escolhida pela Tati.", price: "Sob consulta", imageLabel: "Foto da roupa aqui", color: "#dce8df", image: "./assets/moda-look-studio.png", alt: "Conjunto com blusa rosa e calça branca em fotografia de estúdio", position: "center" },
+  { category: "Roupa", name: "Blusa feminina", description: "Uma peça versátil escolhida pela Taty.", price: "Sob consulta", imageLabel: "Foto da roupa aqui", color: "#dce8df", image: "./assets/moda-look-studio.png", alt: "Conjunto com blusa rosa e calça branca em fotografia de estúdio", position: "center" },
   { category: "Perfume", name: "Perfume masculino", description: "Uma fragrância intensa para marcar presença.", price: "Sob consulta", imageLabel: "Foto do perfume aqui", color: "#f2ded2", image: "./assets/perfume-masculino-studio.png", alt: "Perfume masculino preto em fotografia de estúdio", position: "center" },
   { category: "Bolsa", name: "Bolsa 02", description: "Bonita, versátil e fácil de combinar.", price: "Sob consulta", imageLabel: "Foto da bolsa aqui", color: "#eadfe8" },
 ];
@@ -36,7 +36,7 @@ const tatiPicks = [
 
 // PLACEHOLDERS: substituir por avaliações reais e autorizadas antes da publicação definitiva.
 const testimonialPlaceholders = [
-  { text: "Espaço reservado para uma avaliação real sobre o atendimento da Tati.", author: "Nome da cliente", note: "avaliação demonstrativa" },
+  { text: "Espaço reservado para uma avaliação real sobre o atendimento da Taty.", author: "Nome da cliente", note: "avaliação demonstrativa" },
   { text: "Espaço reservado para uma avaliação real sobre um produto recebido.", author: "Nome da cliente", note: "avaliação demonstrativa" },
   { text: "Espaço reservado para uma avaliação real sobre a experiência de compra.", author: "Nome da cliente", note: "avaliação demonstrativa" },
 ];
@@ -151,7 +151,7 @@ function showToast(message) {
 }
 function openWhatsApp(message) {
   if (!cleanNumber) {
-    showToast("O WhatsApp será ativado quando o número da Tati for adicionado.");
+    showToast("O WhatsApp será ativado quando o número da Taty for adicionado.");
     return;
   }
   window.open(`https://wa.me/${cleanNumber}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
@@ -164,12 +164,12 @@ document.querySelectorAll(".whatsapp-link").forEach((link) => {
       openWhatsApp(SITE_CONFIG.whatsappIntro);
     } else if (link.classList.contains("floating-whatsapp")) {
       event.preventDefault();
-      showToast("O WhatsApp será ativado quando o número da Tati for adicionado.");
+      showToast("O WhatsApp será ativado quando o número da Taty for adicionado.");
     }
   });
 });
 document.querySelectorAll(".product-whatsapp").forEach((button) => {
-  button.addEventListener("click", () => openWhatsApp(`Oi, Tati! Vi o ${button.dataset.product} no seu site e queria saber mais.`));
+  button.addEventListener("click", () => openWhatsApp(`Oi, Taty! Vi o ${button.dataset.product} no seu site e queria saber mais.`));
 });
 
 document.querySelectorAll(".instagram-link").forEach((link) => {
